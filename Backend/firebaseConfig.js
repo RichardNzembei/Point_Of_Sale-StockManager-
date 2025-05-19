@@ -12,7 +12,7 @@ try {
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://budhair-be653-default-rtdb.firebaseio.com/"
+  databaseURL: "https://point-of-sale-stockmanager-default-rtdb.firebaseio.com/"
 });
 
 const db = admin.firestore();
