@@ -4,8 +4,8 @@ const firestore = require('../firebaseConfig');
 const router = express.Router();
 
 const vapidKeys = {
-  publicKey: 'BLXNZaVwiz5mh3WI_Zqf-e77TvVs80zxJX0KL8MZEB2KRcAvPANCekrwj8vbGrNT6nMGmwu1zxbBOdMd8S6kaGM',
-  privateKey: 'IQtpY0qIYG999VvQXcPAcmK7PnIYbwBJYY5I3If-MJA',
+  publicKey: 'BPZR6kmFO_ZlPGCbIpCYh88T9rD3ztEspMqwmhBJgPAQefRSp7ZdxZ1Ejnn_ZHwjdTRPeNr_QDCs6V19e8GiWfY',
+  privateKey: 'q4ZCACxYdv0UvZdttAbyuQ-b1NIfsq0bi-vuEJAGe6g',
 };
 
 

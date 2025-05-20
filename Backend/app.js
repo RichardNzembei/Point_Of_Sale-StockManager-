@@ -14,10 +14,8 @@ const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
     origin: [
-      "https://budget-hair-stock-management-system-wui7.vercel.app",
-      "https://budget-hair-stock-management-system.vercel.app",
-      "https://budget-hair-stock-management-system-ll2i.vercel.app",
-      "https://budget-hair-stock-management-system.vercel.app/",
+      "https://point-of-sale-stock-manager.vercel.app/",
+      "https://point-of-sale-stock-manager-8xq7.vercel.app/",
       "http://localhost:5173",
       "http://localhost:5174",
     ],
@@ -31,10 +29,8 @@ app.use(bodyParser.json());
 app.use(
   cors({
     origin: [
-      "https://budget-hair-stock-management-system-wui7.vercel.app",
-      "https://budget-hair-stock-management-system.vercel.app",
-      "https://budget-hair-stock-management-system-ll2i.vercel.app",
-      "https://budget-hair-stock-management-system.vercel.app/",
+      "https://point-of-sale-stock-manager.vercel.app/",
+      "https://point-of-sale-stock-manager-8xq7.vercel.app/",
       "http://localhost:5173",
       "http://localhost:5174",
     ],

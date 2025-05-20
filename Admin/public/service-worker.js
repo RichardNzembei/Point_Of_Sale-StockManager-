@@ -1,4 +1,4 @@
-const PUBLIC_VAPID_KEY = 'BLXNZaVwiz5mh3WI_Zqf-e77TvVs80zxJX0KL8MZEB2KRcAvPANCekrwj8vbGrNT6nMGmwu1zxbBOdMd8S6kaGM';
+const PUBLIC_VAPID_KEY = 'BPZR6kmFO_ZlPGCbIpCYh88T9rD3ztEspMqwmhBJgPAQefRSp7ZdxZ1Ejnn_ZHwjdTRPeNr_QDCs6V19e8GiWfY';
 
 // Event listener for push notifications
 self.addEventListener('push', (event) => {
@@ -8,8 +8,8 @@ self.addEventListener('push', (event) => {
   const title = data.title || 'New Notification';
   const options = {
     body: data.body || 'You have a new notification',
-    icon: '/favicon/web-app-manifest-192x192.png',
-    badge: '/favicon/web-app-manifest-192x192.png',
+    icon: '/favicon_io/android-chrome-192x192.png',
+    badge: '/favicon_io/android-chrome-192x192.png',
   };
 
   console.log('Notification data:', { title, options });
@@ -28,7 +28,7 @@ self.addEventListener('notificationclick', (event) => {
   console.log('Notification clicked:', event);
   event.notification.close();
 
-  const url = 'https://budget-hair-stock-management-system-ll2i.vercel.app/'; // Replace with your Vercel URL
+  const url = 'https://point-of-sale-stock-manager.vercel.app/'; // Replace with your Vercel URL
   console.log(`Opening window: ${url}`);
 
   event.waitUntil(
