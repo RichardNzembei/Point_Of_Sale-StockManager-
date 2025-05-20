@@ -3,10 +3,11 @@ import { defineStore } from 'pinia';
 import axios from 'axios';
 import { io } from 'socket.io-client';
 
+
 const apiBaseUrl =
-  process.env.NODE_ENV === 'production'
-    ? 'https://point-of-sale-stockmanager.onrender.com.'
-    : 'http://localhost:5000';
+  process.env.NODE_ENV === "production"
+    ? "https://point-of-sale-stockmanager.onrender.com"
+    : "http://localhost:5000";
 
 export const useNotificationStore = defineStore('notification', {
   state: () => ({
