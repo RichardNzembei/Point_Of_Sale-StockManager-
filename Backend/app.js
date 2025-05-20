@@ -14,29 +14,30 @@ const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
     origin: [
-      "https://point-of-sale-stock-manager.vercel.app/",
-      "https://point-of-sale-stock-manager-8xq7.vercel.app/",
+      "https://point-of-sale-stock-manager.vercel.app",
+      "https://point-of-sale-stock-manager-8xq7.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
     ],
     methods: ['GET', 'POST'],
+    credentials: true,
   },
 });
 
 const PORT = process.env.PORT || 5000;
 
+app.use(cors({
+  origin: [
+    "https://point-of-sale-stock-manager.vercel.app",
+    "https://point-of-sale-stock-manager-8xq7.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:5174",
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  credentials: true,
+}));
+
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: [
-      "https://point-of-sale-stock-manager.vercel.app/",
-      "https://point-of-sale-stock-manager-8xq7.vercel.app/",
-      "http://localhost:5173",
-      "http://localhost:5174",
-    ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE','PATCH'],
-  })
-);
 
 app.use((req, res, next) => {
   req.io = io;
