@@ -1,11 +1,11 @@
-const PUBLIC_VAPID_KEY = 'BLXNZaVwiz5mh3WI_Zqf-e77TvVs80zxJX0KL8MZEB2KRcAvPANCekrwj8vbGrNT6nMGmwu1zxbBOdMd8S6kaGM';
+const PUBLIC_VAPID_KEY = 'BPZR6kmFO_ZlPGCbIpCYh88T9rD3ztEspMqwmhBJgPAQefRSp7ZdxZ1Ejnn_ZHwjdTRPeNr_QDCs6V19e8GiWfY';
 import { defineStore } from 'pinia';
 import axios from 'axios';
 import { io } from 'socket.io-client';
 
 const apiBaseUrl =
   process.env.NODE_ENV === 'production'
-    ? 'https://budget-hair-stock-management-system.onrender.com'
+    ? 'https://point-of-sale-stockmanager.onrender.com.'
     : 'http://localhost:5000';
 
 export const useNotificationStore = defineStore('notification', {
