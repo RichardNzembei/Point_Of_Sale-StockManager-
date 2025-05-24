@@ -1,7 +1,9 @@
 <template>
   <div class="container mx-auto py-4 sm:py-6 md:py-8 px-4 sm:px-6 max-w-full sm:max-w-4xl md:max-w-6xl">
-    <h1 class="text-base sm:text-md md:text-lg font-bold mb-6 sm:mb-8 text-center text-rose-500 uppercase tracking-wider">
-      <span class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-rose-50 to-pink-50 rounded-xl shadow-sm">
+    <h1
+      class="text-base sm:text-md md:text-lg font-bold mb-6 sm:mb-8 text-center text-rose-500 uppercase tracking-wider">
+      <span
+        class="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-rose-50 to-pink-50 rounded-xl shadow-sm">
         Main Dashboard
       </span>
     </h1>
@@ -11,13 +13,18 @@
       <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-md border border-rose-100">
         <div class="flex items-center justify-between mb-4 sm:mb-5">
           <h2 class="font-semibold text-base sm:text-lg md:text-xl text-gray-800 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5 mr-2 text-rose-500" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5 mr-2 text-rose-500" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path
+                d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                clip-rule="evenodd" />
             </svg>
             Sales Overview
           </h2>
-          <span class="today bg-gradient-to-r from-green-100 to-emerald-50 rounded-full px-2 sm:px-3 py-1 text-xs sm:text-sm font-semibold text-emerald-700 shadow-inner">
+          <span
+            class="today bg-gradient-to-r from-green-100 to-emerald-50 rounded-full px-2 sm:px-3 py-1 text-xs sm:text-sm font-semibold text-emerald-700 shadow-inner">
             Today's Sales
           </span>
         </div>
@@ -31,8 +38,10 @@
 
         <div v-else-if="salesItems.length === 0" class="text-center py-6 sm:py-8">
           <div class="inline-block p-3 sm:p-4 bg-rose-50 rounded-full mb-2 sm:mb-3 shadow-inner">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 sm:h-8 w-6 sm:w-8 text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 sm:h-8 w-6 sm:w-8 text-rose-400" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
           </div>
           <p class="text-gray-500 font-medium text-sm sm:text-base">No sales recorded for today</p>
@@ -44,7 +53,8 @@
             <div>
               <div class="flex items-center mb-1">
                 <span class="inline-block w-2 h-2 rounded-full bg-rose-400 mr-2"></span>
-                <strong class="text-gray-700 font-medium text-sm sm:text-base">{{ sale.productType.toUpperCase() }}</strong>
+                <strong class="text-gray-700 font-medium text-sm sm:text-base">{{ sale.productType.toUpperCase()
+                  }}</strong>
               </div>
               <p class="text-xs sm:text-sm text-gray-600 pl-4">
                 {{ sale.productSubtype.toUpperCase() }}:
@@ -62,11 +72,24 @@
       <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-md border border-rose-100">
         <div class="flex items-center justify-between mb-4 sm:mb-5">
           <h2 class="font-semibold text-base sm:text-lg md:text-xl text-gray-800 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5 mr-2 text-rose-500" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5 mr-2 text-rose-500" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                clip-rule="evenodd" />
             </svg>
             Stock Overview
           </h2>
+          <div class="flex items-center space-x-2">
+            <button @click="reloadStock" class="p-1 sm:p-1.5 rounded-full hover:bg-rose-100 transition-colors"
+              :class="{ 'animate-spin': isReloading }" :disabled="isReloading" title="Reload stock data">
+              <svg class="h-4 w-4 sm:h-5 w-5 text-rose-500 hover:text-rose-600" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </button>
+          </div>
           <span class="text-xs sm:text-sm text-rose-500 bg-rose-50 px-2 py-1 rounded-full">
             {{ Object.keys(stock).length }} Product Types
           </span>
@@ -74,13 +97,9 @@
 
         <!-- Category Toggle Buttons -->
         <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6">
-          <button 
-            v-for="cat in availableCategories"
-            :key="cat"
-            @click="toggleCategory(cat)"
+          <button v-for="cat in availableCategories" :key="cat" @click="toggleCategory(cat)"
             :class="{ 'bg-rose-500 text-white': activeCategory === cat, 'bg-rose-100 text-rose-700': activeCategory !== cat }"
-            class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-colors duration-200 touch-manipulation"
-          >
+            class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-colors duration-200 touch-manipulation">
             {{ cat }}
           </button>
         </div>
@@ -100,8 +119,10 @@
 
         <div v-else-if="Object.keys(filteredStock).length === 0" class="text-center py-6 sm:py-8">
           <div class="inline-block p-3 sm:p-4 bg-rose-50 rounded-full mb-2 sm:mb-3 shadow-inner">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 sm:h-8 w-6 sm:w-8 text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 sm:h-8 w-6 sm:w-8 text-rose-400" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
           </div>
           <p class="text-gray-500 font-medium text-sm sm:text-base">No stock data available</p>
@@ -114,33 +135,40 @@
             <!-- Product Type Header -->
             <div class="flex justify-between items-center mb-2 sm:mb-3 pb-2 border-b border-rose-200">
               <h3 class="font-semibold text-sm sm:text-base text-gray-700 flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 sm:h-4 w-3 sm:w-4 mr-2 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 sm:h-4 w-3 sm:w-4 mr-2 text-rose-500" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
                 {{ productType.toUpperCase() }} ({{ categories[productType] || 'UNKNOWN' }})
               </h3>
-              <button @click="deleteProductType(productType)" 
+              <button @click="deleteProductType(productType)"
                 class="text-rose-500 hover:text-rose-700 transition-colors duration-200 p-1 rounded-full hover:bg-rose-100 touch-manipulation">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                    clip-rule="evenodd" />
                 </svg>
               </button>
             </div>
 
             <ul class="space-y-2 sm:space-y-3">
-              <li v-for="(quantity, productSubtype) in subtypes" :key="productSubtype" 
+              <li v-for="(quantity, productSubtype) in subtypes" :key="productSubtype"
                 class="flex justify-between items-center bg-white p-2 sm:p-3 rounded-lg border border-rose-100">
                 <div class="flex-1">
                   <span class="font-medium text-sm sm:text-base text-gray-700">{{ productSubtype.toUpperCase() }}</span>
                 </div>
-                
+
                 <div class="flex items-center space-x-2 sm:space-x-4">
                   <!-- Stock Quantity Indicator -->
                   <div class="text-right min-w-[80px] sm:min-w-[100px]">
-                    <span v-if="quantity === 0" class="px-2 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-800">
+                    <span v-if="quantity === 0"
+                      class="px-2 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-800">
                       Out of Stock
                     </span>
-                    <span v-else-if="quantity < 5" class="px-2 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
+                    <span v-else-if="quantity < 5"
+                      class="px-2 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
                       Low Stock ({{ quantity }})
                     </span>
                     <span v-else class="px-2 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
@@ -150,41 +178,40 @@
 
                   <!-- Actions Dropdown -->
                   <div class="relative">
-                    <button 
-                      @click.stop="toggleDropdown(productType, productSubtype)"
+                    <button @click.stop="toggleDropdown(productType, productSubtype)"
                       :aria-expanded="dropdownVisible[`${productType}-${productSubtype}`]"
                       :aria-controls="`dropdown-${productType}-${productSubtype}`"
-                      class="p-1 rounded-full hover:bg-rose-100 text-rose-500 hover:text-rose-700 transition-colors duration-200 touch-manipulation"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                      class="p-1 rounded-full hover:bg-rose-100 text-rose-500 hover:text-rose-700 transition-colors duration-200 touch-manipulation">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
                       </svg>
                     </button>
-                    
-                    <transition
-                      enter-active-class="transition ease-out duration-100"
-                      enter-from-class="transform opacity-0 scale-95"
-                      enter-to-class="transform opacity-100 scale-100"
+
+                    <transition enter-active-class="transition ease-out duration-100"
+                      enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100"
                       leave-active-class="transition ease-in duration-75"
-                      leave-from-class="transform opacity-100 scale-100"
-                      leave-to-class="transform opacity-0 scale-95">
-                      <div 
-                        v-if="dropdownVisible[`${productType}-${productSubtype}`]"
+                      leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
+                      <div v-if="dropdownVisible[`${productType}-${productSubtype}`]"
                         :id="`dropdown-${productType}-${productSubtype}`"
-                        class="dropdown-menu absolute right-0 z-10 mt-2 w-32 sm:w-36 origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-rose-200 focus:outline-none"
-                      >
+                        class="dropdown-menu absolute right-0 z-10 mt-2 w-32 sm:w-36 origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-rose-200 focus:outline-none">
                         <div class="py-1">
                           <button @click.stop="editStock(productType, productSubtype)"
                             class="flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 hover:bg-rose-50 w-full text-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 sm:h-4 w-3 sm:w-4 mr-2 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 sm:h-4 w-3 sm:w-4 mr-2 text-rose-500"
+                              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
                             Edit
                           </button>
                           <button @click.stop="deleteProductSubtype(productType, productSubtype)"
                             class="flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-rose-600 hover:bg-rose-50 w-full text-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 sm:h-4 w-3 sm:w-4 mr-2 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 sm:h-4 w-3 sm:w-4 mr-2 text-rose-500"
+                              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                             </svg>
                             Delete
                           </button>
@@ -209,39 +236,35 @@
         <div class="mb-3 sm:mb-4">
           <label for="newQuantity" class="block text-sm sm:text-md font-medium text-gray-700 mb-1">
             <span class="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5 mr-1 text-rose-500" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 sm:h-5 w-4 sm:w-5 mr-1 text-rose-500"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd" />
               </svg>
               Quantity
             </span>
           </label>
-          <input 
-            v-model.number="newQuantity" 
-            id="newQuantity" 
-            type="number" 
-            min="0" 
-            required 
+          <input v-model.number="newQuantity" id="newQuantity" type="number" min="0" required
             class="w-full mt-1 px-3 sm:px-4 py-2 sm:py-3 border border-rose-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-transparent"
-            :disabled="stockStore.loading"
-          />
+            :disabled="stockStore.loading" />
         </div>
         <div class="flex justify-end space-x-2">
-          <button 
-            @click="saveStock" 
+          <button @click="saveStock"
             class="px-3 sm:px-4 py-1.5 sm:py-2 bg-rose-500 text-white rounded-xl hover:bg-rose-600 transition-colors duration-200 flex items-center disabled:bg-gray-300 disabled:cursor-not-allowed touch-manipulation"
-            :disabled="stockStore.loading"
-          >
-            <svg v-if="stockStore.loading" class="animate-spin h-4 sm:h-5 w-4 sm:w-5 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            :disabled="stockStore.loading">
+            <svg v-if="stockStore.loading" class="animate-spin h-4 sm:h-5 w-4 sm:w-5 mr-2 text-white"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              <path class="opacity-75" fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+              </path>
             </svg>
             {{ stockStore.loading ? 'Saving...' : 'Save' }}
           </button>
-          <button 
-            @click="showEditModal = false" 
+          <button @click="showEditModal = false"
             class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-200 text-gray-700 rounded-xl hover:bg-gray-300 transition-colors duration-200 touch-manipulation"
-            :disabled="stockStore.loading"
-          >
+            :disabled="stockStore.loading">
             Cancel
           </button>
         </div>
@@ -267,6 +290,21 @@ const showEditModal = ref(false);
 const editingProductType = ref("");
 const editingProductSubtype = ref("");
 const newQuantity = ref(0);
+
+const isReloading = ref(false);
+
+const reloadStock = async () => {
+  if (isReloading.value || stockStore.loading) return;
+
+  isReloading.value = true;
+  try {
+    await stockStore.fetchStock();
+  } catch (error) {
+    console.error('Failed to reload stock:', error);
+  } finally {
+    isReloading.value = false;
+  }
+};
 
 const salesItems = computed(() => {
   const today = new Date().setHours(0, 0, 0, 0);
@@ -374,42 +412,60 @@ onUnmounted(() => {
 .transition-all {
   transition-property: all;
 }
+
 ul {
   scrollbar-width: thin;
   scrollbar-color: #e2e8f0 #f8fafc;
 }
+
 ul::-webkit-scrollbar {
   width: 6px;
 }
+
 ul::-webkit-scrollbar-track {
   background: #f8fafc;
   border-radius: 3px;
 }
+
 ul::-webkit-scrollbar-thumb {
   background-color: #e2e8f0;
   border-radius: 3px;
 }
+
 button:focus {
   outline: 2px solid #0ea5e9;
   outline-offset: 2px;
 }
+
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
+
 .empty-state-icon {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
 .animate-pulse {
   animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
